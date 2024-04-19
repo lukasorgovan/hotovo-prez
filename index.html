@@ -1,40 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/hotovo.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+		<section
+		data-background="dist/theme/assets/webdev-meetup.png"
+		data-background-size="100%"
+	  >   
+	  </section>
+        <section>
+			<div style="display: flex; flex-direction: column; align-items: flex-end;">
+				<div class="t-right">
+					<h2 class="t-right">Unleasing Development freedom</h2><h4 class="t-violet"> Exploring the power of strapi.io CMS</p>
+				</div>
+          
+          <img
+            src="dist/theme/assets/hotovo-logo-white.png"
+            style="width: 30%; margin-top: 10rem"
+          />
 		</div>
+        </section>
+		<section><p>Keep it simple.</p></section>
+	
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+		<section>
+			<h3 class="t-lower">.t-lower for lowercase</h3>
+			<p class="t-left">
+                .t-left - left align text
+              </p>
+              <p class="t-right">
+                .t-right - right align text
+              </p>
+			  <p class="t-center t-upper">
+                .t-center .t-upper - upper case & center align text
+              </p>
+		</section>
+		<section data-auto-animate>
+			<h3 data-id="code-title">Code With Animations</h3>
+			<pre
+			  data-id="code-animation"
+			><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24|9-11"><script type="text/template">
+						  import React, { useState } from 'react';
+  
+						  function Example() {
+							const [count, setCount] = useState(0);
+  
+							return (
+							  <div>
+								<p>You clicked {count} times</p>
+								<button onClick={() => setCount(count + 1)}>
+								  Click me
+								</button>
+							  </div>
+							);
+						  }
+  
+						  function SecondExample() {
+							const [count, setCount] = useState(0);
+  
+							return (
+							  <div>
+								<p>You clicked {count} times</p>
+								<button onClick={() => setCount(count + 1)}>
+								  Click me
+								</button>
+							  </div>
+							);
+						  }
+					  </script></code></pre>
+		  </section>
+		<section>
+			<h3 class="">Colors and highlighting</h3>
+			<p class="t-left">
+             There are exposed color classes and variables (e.g. .t-highlight, .t-yellow...) if you need to make <span class="t-highlight">something highlighted</span> for example. 
+			</p>
+			 <p class="m-3" >
+				If possible, stick to only 1-2 colors per slide. <span class="t-violet">Please</span><span class="t-green"> don't</span><span class="t-yellow"> use</span><span class="t-blue"> too</span><span class="t-pink"> many</span> colors.
+              </p>
+		</section>
+		<section><p style="color: green">Completely <span style="color: red">avoid custom colors</span> unless its a must</p>
+			  </section>
+			  <section class="bg-green"><h3 class="t-gray">Beware of bad contrast!</h3></section>
+        <section class="bg-violet">
+          <div class="l-double">
+            <div>
+              <h3 class="r-orange">Two columns & background</h1>
+            </div>
+            <div class="t-left">
+              <p>
+                wrap section items in div.l-double for layout with two columns
+              </p>
+              <p>
+                use .bg-violet class (or other color classes, see next slide) if
+                you want prominent slide. Use SPARINGLY!
+              </p>
+            </div>
+          </div>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+		<section>
+			<div class="l-double">
+				<div>
+				<h3>Settings</h3>
+			</div>
+			<div class="bg-yellow t-black p-3">
+					<ul>
+						<li>Store your assets in <code>dist/theme/assets</code></li>
+						<li>
+							<code>hotovo.scss</code> gives you visibility to what is available to you. You can tweak things if you need for your presentation.
+						</li>
+						<li>
+							Also see <code>demo.html</code> and/or reveal.js docs for more stuff you can use.
+						</li>
+					</ul>
+			</div>
+			</div>
+		</section>
+		
+        <section
+          data-background-video="dist/theme/assets/hotovo-animation.mp4"
+        ></section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
