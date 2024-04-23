@@ -29,7 +29,7 @@
 		<section>
 			<div style="display: flex; flex-direction: column; align-items: flex-end;">
 				<div class="t-right">
-					<h2 class="t-right">Unleashing Development freedom</h2><h4 class="t-violet"> Exploring the power of strapi.io CMS</p>
+					<h2 class="t-right">Unleashing Development freedom</h2><h4 class="t-violet" style="text-shadow: 0px 0px 30px var(--r-violet);"> Exploring the power of strapi.io CMS</p>
 				</div>
           
           <img
@@ -39,12 +39,13 @@
 		</div>
         </section>
 		
-		<section>
-			<section><h3 class="t-lower">headless CMS</h3></section>
+		<section data-auto-animate>
+			<section><h3 class="t-lower">head<span id="headless" style="transform: rotate(90deg);translate: -30px 3rem;display: inline-block;">: less</span> CMS</h3></section>
+
 			<section> 
 				<img
 				src="dist/theme/assets/lukas/headless.png"
-				style="max-height: 80vh;"
+				style="max-height: 60vh;"
 			/>
 			<p style="font-size: 1rem">Credits: 
 				<a href="https://www.flaticon.com/free-icons/tablet" title="tablet icons">Tablet,</a>
@@ -57,24 +58,48 @@
 			</section>
 		</section>
 
-		<section class="">
+		<section class="" data-auto-animate>
+		  <div class="l-double">
+				<div>
+			  <h3 class=""><span style="text-decoration: line-through; text-decoration-color: var(--r-orange);">Key</span> features</h3>
+			</div>
+		  <div class="t-left">
+			  <ul>
+				  <li>Fast learning curve</li>
+				  <li>"Frontend" agnostic</li>
+				  <li>personal -> marketing pages -> ecommerce</li>
+				  <li>Nodejs + typescript</li>
+			  </ul>
+		  </div>
+	  </div>
+	  <aside class="notes">
+		📝 📝 open-source, podpora roznych databaz ako SQLite, Postgres, v public beta v5 aj mongodb - vyber pri instalacii cez CLI ,
+		rd.nl vyse 900 000 clankov manazovanych skrz strapi.
+	  </aside>
+	</section>
+		<section class="" data-auto-animate>
 			<div class="l-double">
 		  		<div>
-				<h3 class=""><span style="text-decoration: line-through; text-decoration-color: var(--r-orange);">Key</span> features</h3>
+				<h3 class=""><span>Key</span> features</h3>
 		 	 </div>
 			<div class="t-left">
-				<ul><li>Fast learning curve</li>
-				<li>Content types: Single, Collection, Custom</li>
-				<li>RESTfull & GraphQL</li>
-				<li>Roles, permission</li>
-				<li>(i18n)</li></ul>
+				<ul>
+				  <li>Nodejs + typescript</li>
+					<li>RESTful & GraphQL</li>
+					<li>SingleType, Collection, Component, Relations</li>
+					<li>Roles, permission</li>
+					<li>Internationalization (i18n)</li>
+				</ul>
 			</div>
 		</div>
+		<aside class="notes">
+			📝 📝 GraphQL "Shadow CRUD" a customizacie - mimikuje crud a vygeneruje graphQL typy, mutacie, queries a resolvery na zaklade datovej schemy 
+		  </aside>
 	  </section>
 
 	  <section>
 		<section>
-			<h3 class="t-lower">actually <span class="t-upper t-yellow" style="text-decoration: underline">powerfull</span> features</h3>
+			<h3 class="t-lower">actually <span class="t-upper t-yellow" style="text-decoration: underline">powerful</span> features</h3>
 		</section>
 		<section>
 			<h3>customisable API</h3>
@@ -83,6 +108,10 @@
 			<aside class="notes">
 				📝 📝 override methods, access to Entity Service API (document service in strapi 5) - built on top of Query engine API, 
 			  </aside>
+		</section>
+		<section>
+			<h3>middleware example</h3>
+			<video src="dist/theme/assets/lukas/terminal.mov" data-autoplay></video>
 		</section>
 		<section data-auto-animate>
 			<h3>middleware example</h3>
@@ -157,7 +186,7 @@
  	</section>
 
 	<section>
-		<h3>Usefull links</h3>
+		<h3>Useful links</h3>
 		<ul>
 			<li><a target="_blank" href="https://docs.strapi.io/">Strapi docs</a></li>
 			<li><a target="_blank" href="https://strapi.io/blog/improve-your-frontend-experience-with-strapi-types-and-type-script">Strapi types in your FE</a></li>
